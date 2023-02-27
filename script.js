@@ -28,6 +28,9 @@ function selectOperator(x){
 
 function operate(){
     secondNumber = Number(display.innerText);
+    if (firstNumber === ''){
+        return;
+    }
     let answer = "";
     switch(operator){
         case "/":
