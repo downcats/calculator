@@ -90,6 +90,10 @@ function backspace(){
     if (display.innerText === "0"){
         return;
     }
+    if (equalsPressed) {
+        return;
+    }
+    
     display.innerText = display.innerText.slice(0, -1);
 }
 
