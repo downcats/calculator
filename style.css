@@ -8,6 +8,8 @@
     border: solid 2px black;
     width: 375px;
     height: 600px;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
 }
 
 .display {
@@ -24,10 +26,11 @@
     justify-content: space-evenly;
     align-items: flex-end;
     padding-right: 25px;
+    box-shadow: 2px 2px black;
 }
 
 .numbers {
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .buttons {
@@ -39,29 +42,24 @@
     padding: 20px 5px 5px;
 }
 
-.equals {
-    background-color: red;
+button:active {
+    background-color: lightgray;
 }
 
-.equals:hover {
-    filter: brightness(60%);
+.equals {
+    background-color: lightblue;
 }
 
 .equals:active {
-    background-color: darkred;
+    background-color: cyan;
 }
 
 .operator {
     background-color: darkgray;
-    color: white;
 }
 
 .operator:active {
     background-color: gray;
-}
-
-.operator:hover {
-    filter: brightness(60%);
 }
 
 .clear {
@@ -73,4 +71,10 @@ button {
     height: 75px;
     margin: 3px;
     font-size: 20px;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+}
+
+button:hover {
+    filter: brightness(75%);
 }
