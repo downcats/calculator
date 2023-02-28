@@ -43,9 +43,25 @@
     background-color: red;
 }
 
+.equals:hover {
+    filter: brightness(60%);
+}
+
+.equals:active {
+    background-color: darkred;
+}
+
 .operator {
-    background-color: black;
+    background-color: darkgray;
     color: white;
+}
+
+.operator:active {
+    background-color: gray;
+}
+
+.operator:hover {
+    filter: brightness(60%);
 }
 
 .clear {
