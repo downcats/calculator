@@ -15,6 +15,8 @@
                 </div>
             </div>
             <div class="buttons">
+                <button class="clear" id="clear" onclick="clearScreen()">Clear</button>
+                <button class="backspace" id="backspace" onclick="backspace()">Del</button>
                 <button class="number" id="seven" onclick="appendNumber(7)">7</button>
                 <button class="number" id="eight" onclick="appendNumber(8)">8</button>
                 <button class="number" id="nine" onclick="appendNumber(9)">9</button>
@@ -28,10 +30,9 @@
                 <button class="number" id="three" onclick="appendNumber(3)">3</button>
                 <button class="operator" id="minus" onclick="selectOperator('-')">-</button>
                 <button class="number" id="zero" onclick="appendNumber(0)">0</button>
-                <button class="number" id="decimal" onclick="addDecimal()">.</button>
+                <button class="decimal" id="decimal" onclick="addDecimal()">.</button>
                 <button class="equals" id="enter" onclick="operate()">=</button>
                 <button class="operator" id="plus" onclick="selectOperator('+')">+</button>
-                <button class="clear" id="clear" onclick="clearScreen()">Clear</button>
             </div>
         </div>
     </div>
