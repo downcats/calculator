@@ -4,15 +4,18 @@ let operator = "";
 const display = document.getElementById("numbers");
 let operatorPressed = false;
 let equalsPressed = false;
-display.innerHTML = "0";
+display.innerText = "0";
 
 function appendNumber(x) {
+    if (display.innerText.length > 15){
+        return;
+    }
     if (equalsPressed){
         display.innerText = null;
         firstNumber = "";
     }
     if (x === 0){
-        if (display.innerHTML === "0"){
+        if (display.innerText === "0"){
             return;
         } else {
             display.innerText += x;
@@ -20,11 +23,11 @@ function appendNumber(x) {
         }
     }
 
-    if (display.innerHTML === "0"){
-        display.innerHTML = null;
+    if (display.innerText === "0"){
+        display.innerText = null;
     }
     if (operatorPressed){
-        display.innerHTML = null;
+        display.innerText = null;
         operatorPressed = false;
     }
     display.innerText += x;
@@ -64,14 +67,14 @@ function operate(){
         default:
             break;
     }
-    display.innerHTML = null;
-    display.innerHTML = answer;
+    display.innerText = null;
+    display.innerText = answer;
     firstNumber = answer;
     equalsPressed = true;
 }
 
 function clearScreen(){
-    display.innerHTML = "0";
+    display.innerText = "0";
     firstNumber = "";
     secondNumber = "";
     operator = "";
@@ -79,8 +82,20 @@ function clearScreen(){
     equalsPressed = false;
 }
 
-function addDecimal(){
-    if (!display.innerHTML === null && !display.innerHTML.includes('.')){
-        display.innerText += ".";
+function backspace(){
+    if (display.innerText.length === 1){
+        display.innerText = "0";
+        return;
     }
+    if (display.innerText === "0"){
+        return;
+    }
+    display.innerText = display.innerText.slice(0, -1);
+}
+
+function addDecimal(){
+    if (display.innerText.includes('.')){
+        return;
+    }
+    display.innerText += '.';
 }
