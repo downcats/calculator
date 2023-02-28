@@ -2,6 +2,7 @@ let firstNumber = "";
 let secondNumber = "";
 let operator = "";
 const display = document.getElementById("numbers");
+let operatorPressed = false;
 display.innerHTML = "0";
 
 function appendNumber(x) {
@@ -17,13 +18,17 @@ function appendNumber(x) {
     if (display.innerHTML === "0"){
         display.innerHTML = null;
     }
+    if (operatorPressed){
+        display.innerHTML = null;
+        operatorPressed = false;
+    }
     display.innerText += x;
 }
 
 function selectOperator(x){
     operator = x;
     firstNumber = Number(display.innerText);
-    display.innerHTML = "0";
+    operatorPressed = true;
 }
 
 function operate(){
