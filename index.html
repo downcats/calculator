@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -16,7 +17,11 @@
             </div>
             <div class="buttons">
                 <button class="clear" id="clear" onclick="clearScreen()">Clear</button>
-                <button class="backspace" id="backspace" onclick="backspace()">Del</button>
+                <button class="backspace" id="backspace" onclick="backspace()">
+                    <span class="material-symbols-outlined">
+                    backspace
+                    </span>
+                </button>
                 <button class="number" id="seven" onclick="appendNumber(7)">7</button>
                 <button class="number" id="eight" onclick="appendNumber(8)">8</button>
                 <button class="number" id="nine" onclick="appendNumber(9)">9</button>
