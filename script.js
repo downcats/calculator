@@ -68,8 +68,8 @@ function operate(){
             break;
     }
     display.innerText = null;
-    display.innerText = Number(answer).toFixed(6);
-    firstNumber = Number(answer).toFixed(6);
+    display.innerText = answer;
+    firstNumber = answer;
     equalsPressed = true;
 }
 
