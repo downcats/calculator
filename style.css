@@ -10,6 +10,7 @@
     height: 600px;
     box-shadow: 5px 5px black;
     border-radius: 10px;
+    background-color: #CDDDDD;
 }
 
 .display {
@@ -27,6 +28,7 @@
     align-items: flex-end;
     padding-right: 25px;
     box-shadow: 2px 2px black;
+    background-color: white;
 }
 
 .numbers {
@@ -43,23 +45,16 @@
 }
 
 button:active {
-    background-color: lightgray;
-}
-
-.equals {
-    background-color: lightblue;
-}
-
-.equals:active {
-    background-color: cyan;
+    background-color: #829B97;
 }
 
 .operator {
-    background-color: darkgray;
+    color: white;
+    background-color: #485B4E;
 }
 
 .operator:active {
-    background-color: gray;
+    background-color: #36453B;
 }
 
 .clear {
@@ -73,6 +68,7 @@ button {
     font-size: 20px;
     box-shadow: 2px 2px black;
     border-radius: 10px;
+    background-color: #99ADAA;
 }
 
 button:hover {
